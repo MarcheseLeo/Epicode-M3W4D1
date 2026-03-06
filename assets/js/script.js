@@ -1,3 +1,4 @@
+/*=================== Swiper Object initialization ===================*/
 const swiper = new Swiper('.swiper', {
 
   direction: 'horizontal',
@@ -36,6 +37,7 @@ const swiper = new Swiper('.swiper', {
 
 const sectionList = document.querySelectorAll("#trending, #watch, #releases")
 
+/*=================== Event Listener on Window scroll ===================*/
 window.addEventListener('scroll', () => {
   sectionList.forEach(section => {
     let boundaries = getBoundaries(section)
@@ -46,6 +48,7 @@ window.addEventListener('scroll', () => {
   })
 })
 
+/*=================== Function to get Element Top and Bottom ===================*/
 function getBoundaries(element) {
   let rect = element.getBoundingClientRect();
   return {

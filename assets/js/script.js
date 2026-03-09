@@ -65,11 +65,11 @@ layoutIcons.forEach((icon, index) => {
   icon.addEventListener('click', () => {
     icon.classList.toggle('active')
     console.log(index)
-    if(index == 0) {
+    if (index == 0) {
       layoutIcons[1].classList.toggle('active')
-    }else{
+    } else {
       layoutIcons[0].classList.toggle('active')
     }
-    
+
   })
 })
